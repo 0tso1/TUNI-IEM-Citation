@@ -277,10 +277,10 @@
     </sort>
     <layout prefix="(" suffix=")" delimiter="; ">
       <group delimiter="">
-        <group delimiter=" ">
-          <text macro="author-short"/>
+        <group delimiter="">
+          <text macro="author-short" suffix=" "/>
           <text macro="year-date"/>
-          <text macro="pages"/>
+          <text macro="pages" prefix=", "/>
         </group>
         <group>
           <label variable="locator" form="short" suffix=" "/>
