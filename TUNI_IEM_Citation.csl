@@ -114,7 +114,6 @@
           </date>
         </group>
         <text variable="URL" prefix="&lt;" suffix="&gt;"/>
-        
       </else-if>
     </choose>
   </macro>
@@ -280,7 +279,6 @@
         <group delimiter="">
           <text macro="author-short" suffix=" "/>
           <text macro="year-date"/>
-          <text macro="pages" prefix=", "/>
         </group>
         <group>
           <label variable="locator" form="short" suffix=" "/>
