@@ -104,7 +104,7 @@
       
       <else-if variable="URL">
         <text term="available at" text-case="capitalize-first"/>
-        <group prefix=" (" delimiter=": " suffix="): ">
+        <group prefix=" (viitattu " delimiter=": " suffix="): ">
           <date form="numeric" variable="accessed">
             <date-part name="day"/>
             <date-part name="month"/>
