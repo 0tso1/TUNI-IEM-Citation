@@ -26,6 +26,7 @@
         <multiple>pp.</multiple>
       </term>
       <term name="in">In:</term>
+      <term name="no date">n.d.</term>
     </terms>
   </locale>
   <macro name="editor">
@@ -116,7 +117,7 @@
   </macro>
   <macro name="number-volumes">
     <choose>
-      <if variable="volume" match="none">
+      <if variable="volume" match="none" >
         <group delimiter=" " prefix="(" suffix=")">
           <text variable="number-of-volumes"/>
           <label variable="volume" form="short" strip-periods="true"/>
@@ -133,13 +134,13 @@
               <text variable="title" font-style="italic"/>
               <text variable="medium" prefix="[" suffix="]"/>
             </group>
-            <text macro="number-volumes"/>
+              <text macro="number-volumes"/>
           </group>
           <text macro="edition"/>
         </group>
       </if>
       <else>
-        <text variable="title" form="long" quotes="true"/>
+        <text variable="title" form="long" quotes="false"/>
       </else>
     </choose>
   </macro>
@@ -201,7 +202,7 @@
   <macro name="locator">
     <choose>
       <if type="article-journal">
-        <text variable="volume"/>
+        <text variable="volume" prefix="Vol."/>
         <text variable="issue" prefix="(" suffix=")"/>
       </if>
     </choose>
